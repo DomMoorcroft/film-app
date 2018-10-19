@@ -14,12 +14,27 @@ class Main extends Component {
     
     render() {
 
+        const apiKey = "db47a6decc6fe973e6d918302d7e403f";
+
+        this.getLatestFilms = () => {
+            
+            const url = "https://api.themoviedb.org/3/discover/movie?api_key=" + apiKey;
+
+            Axios.get(`${url}&sort_by=popularity.desc`)
+                .then ( (response) => {
+                    this.setState({filmResults: response.data.results});
+                    console.log(response.data.results);
+                })
+                .catch( err => {
+                    console.log(err);
+                })
+        }
+
         this.searchEvent = event => {
             this.getFilms(event.target.value);
         }
 
         this.getFilms = (searchQuery) => {
-            const apiKey = "db47a6decc6fe973e6d918302d7e403f";
             const url = "https://api.themoviedb.org/3/search/movie?api_key=" + apiKey;
 
             Axios.get(`${url}&query=${searchQuery}&include_adult=false`)
@@ -32,6 +47,8 @@ class Main extends Component {
                 })
             
         };
+
+        this.getLatestFilms();
 
         return(
 
