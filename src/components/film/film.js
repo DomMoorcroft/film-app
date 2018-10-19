@@ -5,7 +5,6 @@ import './film.css';
 class Film extends Component {
 
     render(filmObject) {
-        console.log("props = ", this.props);
 
         let filmImageUrl = "";
 

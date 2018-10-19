@@ -7,8 +7,6 @@ class FilmList extends Component {
 
     render() {
 
-        console.log("FilmList - ", this.props.filmResults);
-
         return(
 
             <div>
