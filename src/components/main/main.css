@@ -1,0 +1,10 @@
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.row {
+    width: auto;
+    max-width: 1200px;
+    border: 1px solid hotpink;
+}
