@@ -3,6 +3,7 @@ import Axios from 'axios';
 
 import './main.css';
 import Search from '../search/search';
+import FilmList from '../filmList/filmList';
 
 class Main extends Component {
 
@@ -44,6 +45,12 @@ class Main extends Component {
                 <div className="container">
                     <div className="row">
                         <Search searchEvent={this.searchEvent} searchTitle={this.state.searchTitle} />
+                    </div>
+                </div>
+
+                <div className="container">
+                    <div className="row">
+                        <FilmList filmResults={this.state.filmResults} />
                     </div>
                 </div>
 

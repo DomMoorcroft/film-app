@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<FilmList /> should render the FilmList component 1`] = `
+<div>
+  <p>
+    Hole in One
+  </p>
+  <p>
+    One Piece Film Z
+  </p>
+  <p>
+    One Piece Film Strong World
+  </p>
+</div>
+`;
