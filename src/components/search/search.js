@@ -10,9 +10,9 @@ class Search extends Component {
 
             <div>
 
-                <h2 className="search-title">Search for a film</h2>
+                <h2 className="search-title">{this.props.searchTitle}</h2>
 
-                <input type="text" placeholder="Search for a film" className="search-input" />
+                <input type="text" placeholder="Search for a film" className="search-input" onChange={this.props.searchEvent}/>
                 
             </div>
 
