@@ -13,7 +13,7 @@ describe('<FilmList />', () => {
     });
 
     it("should render the FilmList component and have the correct amount of items", () => {
-        expect(wrapper.find('p')).toHaveLength(testResults.length);
+        expect(wrapper.find('Film')).toHaveLength(testResults.length);
     });
 
 });

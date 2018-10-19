@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Film /> should render the film component with parameters 1`] = `
+<div
+  className="card"
+>
+  <img
+    alt="test"
+    className="card-image"
+    src="https://via.placeholder.com/367x200?text=No+image+available"
+  />
+  <div
+    className="card-info"
+  >
+    <h3>
+      test
+    </h3>
+    <p
+      className="card-info-desc"
+    >
+      test
+    </p>
+    <p
+      id="cardInfoRating"
+    >
+      Rating: 
+      test
+    </p>
+    <p
+      id="cardInfoReleaseDate"
+    >
+      Release date: 
+      test
+    </p>
+  </div>
+</div>
+`;

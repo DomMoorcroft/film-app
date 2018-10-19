@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import './filmList.css';
+import Film from '../film/film';
 
 class FilmList extends Component {
 
@@ -12,7 +13,7 @@ class FilmList extends Component {
 
             <div>
                 {this.props.filmResults.map( movie => (
-                    <p>{movie.title}</p>
+                    <Film key={movie.id} title={movie.title} vote_average={movie.vote_average} overview={movie.overview} image={movie.poster_path} release_date={movie.release_date} />
                 ))}
             </div>
 
