@@ -13,7 +13,7 @@ class FilmList extends Component {
 
             <div>
                 {this.props.filmResults.map( movie => (
-                    <Film key={movie.id} title={movie.title} vote_average={movie.vote_average} overview={movie.overview} image={movie.poster_path} release_date={movie.release_date} />
+                    <Film id={movie.id} title={movie.title} vote_average={movie.vote_average} overview={movie.overview} image={movie.poster_path} release_date={movie.release_date} />
                 ))}
             </div>
 

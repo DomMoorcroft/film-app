@@ -6,6 +6,7 @@ import Film from './film';
 describe('<Film />', () => {
 
     const testObject = {
+        "id" : "123",
         "image" : "test",
         "title" : "test",
         "overview" : "test",
@@ -21,6 +22,10 @@ describe('<Film />', () => {
 
     it("should render the card", () => {
         expect(wrapper.find('.card')).toBeDefined();
+    });
+
+    it("should render the link on the card", () => {
+        expect(wrapper.find('a')).toBeDefined();
     });
 
     it("should render the image", () => {

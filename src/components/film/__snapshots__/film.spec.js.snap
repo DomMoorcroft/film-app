@@ -4,34 +4,40 @@ exports[`<Film /> should render the film component with parameters 1`] = `
 <div
   className="card"
 >
-  <img
-    alt="test"
-    className="card-image"
-    src="https://via.placeholder.com/367x200?text=No+image+available"
-  />
-  <div
-    className="card-info"
+  <a
+    className="link"
+    href="https://www.themoviedb.org/movie/undefined"
+    target="_blank"
   >
-    <h3>
-      test
-    </h3>
-    <p
-      className="card-info-desc"
+    <img
+      alt="test"
+      className="card-image"
+      src="https://via.placeholder.com/367x200?text=No+image+available"
+    />
+    <div
+      className="card-info"
     >
-      test
-    </p>
-    <p
-      id="cardInfoRating"
-    >
-      Rating: 
-      test
-    </p>
-    <p
-      id="cardInfoReleaseDate"
-    >
-      Release date: 
-      test
-    </p>
-  </div>
+      <h3>
+        test
+      </h3>
+      <p
+        className="card-info-desc"
+      >
+        test
+      </p>
+      <p
+        id="cardInfoRating"
+      >
+        Rating: 
+        test
+      </p>
+      <p
+        id="cardInfoReleaseDate"
+      >
+        Release date: 
+        test
+      </p>
+    </div>
+  </a>
 </div>
 `;
