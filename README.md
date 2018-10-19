@@ -1,3 +1,5 @@
+## Film App
+
 To clone and run this application, run this from your command line with Git and Yarn or NPM installed.
 
 ```bash
