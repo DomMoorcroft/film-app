@@ -10,8 +10,8 @@ class FilmList extends Component {
         return(
 
             <div>
-                {this.props.filmResults.map( movie => (
-                    <Film key={movie.index} id={movie.id} title={movie.title} vote_average={movie.vote_average} overview={movie.overview} image={movie.backdrop_path} release_date={movie.release_date} />
+                {this.props.filmResults.map( (movie, index) => (
+                    <Film key={movie.id} id={movie.id} title={movie.title} vote_average={movie.vote_average} overview={movie.overview} image={movie.backdrop_path} release_date={movie.release_date} />
                 ))}
             </div>
 

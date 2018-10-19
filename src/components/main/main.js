@@ -11,6 +11,10 @@ class Main extends Component {
         searchTitle: "Search for a film",
         filmResults: []
     }
+
+    componentDidMount() {
+        this.getLatestFilms();
+    }
     
     render() {
 
@@ -46,8 +50,7 @@ class Main extends Component {
             
         };
 
-        this.getLatestFilms();
-
+        
         return(
 
             <div>

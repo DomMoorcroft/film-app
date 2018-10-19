@@ -6,7 +6,7 @@ import Film from './film';
 describe('<Film />', () => {
 
     const testObject = {
-        "key" : "1",
+        "key" : "123",
         "id" : "123",
         "image" : "test",
         "title" : "test",
