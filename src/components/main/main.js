@@ -23,7 +23,6 @@ class Main extends Component {
             Axios.get(`${url}&sort_by=popularity.desc`)
                 .then ( (response) => {
                     this.setState({filmResults: response.data.results});
-                    console.log(response.data.results);
                 })
                 .catch( err => {
                     console.log(err);
@@ -40,7 +39,6 @@ class Main extends Component {
             Axios.get(`${url}&query=${searchQuery}&include_adult=false`)
                 .then ( (response) => {
                     this.setState({filmResults: response.data.results});
-                    console.log(response.data.results);
                 })
                 .catch( err => {
                     console.log(err);
