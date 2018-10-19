@@ -23,7 +23,7 @@ class Film extends Component {
                 <a href={filmUrl} target="_blank" className="link">
                     <img src={filmImageUrl} alt={this.props.title} className="card-image"/>
                     <div className="card-info">
-                        <h3>{this.props.title}</h3>
+                        <h3 className="card-info-title">{this.props.title}</h3>
                         <p className="card-info-desc">{this.props.overview}</p>
                         <p id="cardInfoRating">Rating: {this.props.vote_average}</p>
                         <p id="cardInfoReleaseDate">Release date: {this.props.release_date}</p>

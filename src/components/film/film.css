@@ -28,6 +28,10 @@
     padding: 10px;
 }
 
+.card-info-title {
+    font-size: 17px;
+}
+
 .card-info-desc {
     height: 150px;
     overflow: hidden;

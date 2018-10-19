@@ -6,6 +6,7 @@ import Film from './film';
 describe('<Film />', () => {
 
     const testObject = {
+        "key" : "1",
         "id" : "123",
         "image" : "test",
         "title" : "test",
@@ -14,7 +15,7 @@ describe('<Film />', () => {
         "release_date" : "test"
     };
 
-    const wrapper = shallow(<Film title={testObject.title} vote_average={testObject.vote_average} overview={testObject.overview} image={testObject.poster_path} release_date={testObject.release_date}/>);
+    const wrapper = shallow(<Film key={testObject.key} id={testObject.id} title={testObject.title} vote_average={testObject.vote_average} overview={testObject.overview} image={testObject.poster_path} release_date={testObject.release_date}/>);
 
     it("should render the film component with parameters", () => {
         expect(wrapper).toMatchSnapshot();
