@@ -9,6 +9,7 @@
     "react-scripts": "2.0.5"
   },
   "devDependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.1.0",
     "enzyme": "^3.7.0",
     "enzyme-adapter-react-16": "^1.6.0",
     "enzyme-to-json": "^3.3.4",
@@ -21,13 +22,16 @@
     "eject": "react-scripts eject"
   },
   "jest": {
-    "setupTestFrameworkScriptFile": "<rootdir>tests/setupEnzyme.js",
+    "setupTestFrameworkScriptFile": "<rootDir>tests/setupEnzyme.js",
     "testPathIgnorePatterns": [
       "<rootdir>tests/"
     ],
     "snapshotSerializers": [
       "enzyme-to-json/serializer"
-    ]
+    ],
+    "moduleNameMapper": {
+      "\\.(css|less|sass|scss)$": "<rootDir>/mocks/styleMock.js"
+    }
   },
   "eslintConfig": {
     "extends": "react-app"

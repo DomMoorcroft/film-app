@@ -1,0 +1,13 @@
+{
+    "env": {
+        "test": {
+            "presets": ["@babel/preset-env", "@babel/preset-react"],
+            "only": [
+                "./**/*.js",
+                "./**/*.css",
+                "node_modules/jest-runtime"
+            ],
+            "plugins": ["@babel/plugin-proposal-class-properties"]
+        }
+    }
+}
