@@ -34,14 +34,17 @@ class Main extends Component {
 
         return(
 
-            <div className="container">
-
-                <div className="row">
-                    <h1>Film App</h1>
+            <div>
+                <div className="container">
+                    <div className="row">
+                        <h1>Film App</h1>
+                    </div>
                 </div>
 
-                <div className="row">
-                    <Search searchEvent={this.searchEvent} searchTitle={this.state.searchTitle} />
+                <div className="container">
+                    <div className="row">
+                        <Search searchEvent={this.searchEvent} searchTitle={this.state.searchTitle} />
+                    </div>
                 </div>
 
             </div>
